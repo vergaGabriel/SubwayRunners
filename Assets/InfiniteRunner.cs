@@ -1,13 +1,13 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections.Generic;
 
 public class InfiniteRunner : MonoBehaviour
 {
-    [Header("Refer�ncias")]
+    [Header("Referências")]
     public Transform player;
     public GameObject chunkPrefab;
 
-    [Header("Configura��es")]
+    [Header("Configurações")]
     public int activeChunks = 2;
     public float triggerDistance = 60f; // aumente para evitar gaps
 
@@ -30,23 +30,26 @@ public class InfiniteRunner : MonoBehaviour
 
         if (endPoint == null)
         {
-            Debug.LogError("EndPoint n�o encontrado na �ltima chunk!");
+            Debug.LogError("EndPoint não encontrado na última chunk!");
+            return;
         }
-        else
-        {
-            Debug.Log("EndPoint Z: " + endPoint.position.z);
-        }
+
+        float distanceToEnd = endPoint.position.z - player.position.z;
+
+        Debug.Log($"Distância até o fim: {distanceToEnd:F2}");
+        Debug.Log($"Player pos: {player.position}");
 
         if (player.position.z >= endPoint.position.z - triggerDistance)
         {
+            Debug.Log("➡️ Gerando novo chunk!");
             SpawnChunk(lastChunk);
 
-            // Remove o mais antigo com leve delay
             Transform oldChunk = chunks[0];
             chunks.RemoveAt(0);
             Destroy(oldChunk.gameObject, 1f);
         }
     }
+
 
     void SpawnChunk(Transform previousChunk)
     {

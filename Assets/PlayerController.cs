@@ -3,12 +3,12 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
 {
-    public float forwardSpeed = 5f;    // velocidade pra frente
-    public float laneOffset = 2f;      // distância das faixas
-    public float laneChangeSpeed = 10f; // suavidade da troca de faixa
+    public float forwardSpeed = 5f;
+    public float laneOffset = 2f;
+    public float laneChangeSpeed = 10f;
 
     private Rigidbody rb;
-    private bool onRightLane = false;  // começa na esquerda
+    private bool onRightLane = false;
 
     void Start()
     {
@@ -17,11 +17,13 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        // 1️⃣ Movimento para frente
+        // Movimento para frente (Z)
         Vector3 velocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y, forwardSpeed);
         rb.linearVelocity = velocity;
 
-        // 2️⃣ Movimento lateral suave
+        Debug.Log($"Posição Z: {rb.position.z:F2}");
+
+        // Movimento lateral suave
         float targetX = onRightLane ? laneOffset : -laneOffset;
         Vector3 targetPosition = new Vector3(targetX, rb.position.y, rb.position.z);
         Vector3 newPosition = Vector3.Lerp(rb.position, targetPosition, laneChangeSpeed * Time.fixedDeltaTime);
@@ -30,13 +32,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // 3️⃣ Detectar toque na tela ou clique
         if (Input.GetMouseButtonDown(0))
         {
-            onRightLane = !onRightLane; // alterna faixa
+            onRightLane = !onRightLane;
         }
-
-        // Opcional: aqui você pode adicionar swipe para celular
     }
 
     void OnCollisionEnter(Collision collision)
@@ -44,7 +43,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             Debug.Log("Bateu no obstáculo!");
-            Destroy(gameObject); // personagem some
+            Destroy(gameObject);
         }
     }
 }
