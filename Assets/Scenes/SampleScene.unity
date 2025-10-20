@@ -893,9 +893,6 @@ PrefabInstance:
       addedObject: {fileID: 1177279390}
     - targetCorrespondingSourceObject: {fileID: -7459418478771804671, guid: 73ffbc06802a247cfb1b26f4ee67eba8, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1177279392}
-    - targetCorrespondingSourceObject: {fileID: -7459418478771804671, guid: 73ffbc06802a247cfb1b26f4ee67eba8, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1177279393}
     - targetCorrespondingSourceObject: {fileID: -7459418478771804671, guid: 73ffbc06802a247cfb1b26f4ee67eba8, type: 3}
       insertIndex: -1
@@ -961,19 +958,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &1177279392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1177279388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55c4233d286b42f48a0234c99b25213b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  forwardSpeed: 1
 --- !u!114 &1177279393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1185,7 +1169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f5b14458f1ef734194db3cbaf55810f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InfiniteRunner
-  player: {fileID: 1282097623}
+  player: {fileID: 1177279389}
   chunkPrefab: {fileID: 5172272064197310165, guid: 5a51ebaa7c1b3a94da3a16d553c92372, type: 3}
   activeChunks: 2
   triggerDistance: 25
