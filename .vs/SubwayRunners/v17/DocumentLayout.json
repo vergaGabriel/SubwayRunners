@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Unimar\\Jogos\\SubwayRunners\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{643C2E5C-6C7C-5A2D-4063-F9EC9F0DA3E8}|Assembly-CSharp.csproj|c:\\unimar\\jogos\\subwayrunners\\assets\\infiniterunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{643C2E5C-6C7C-5A2D-4063-F9EC9F0DA3E8}|Assembly-CSharp.csproj|c:\\unimar\\jogos\\subwayrunners\\assets\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{643C2E5C-6C7C-5A2D-4063-F9EC9F0DA3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{643C2E5C-6C7C-5A2D-4063-F9EC9F0DA3E8}|Assembly-CSharp.csproj|C:\\Unimar\\Jogos\\SubwayRunners\\assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{643C2E5C-6C7C-5A2D-4063-F9EC9F0DA3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{643C2E5C-6C7C-5A2D-4063-F9EC9F0DA3E8}|Assembly-CSharp.csproj|C:\\Unimar\\Jogos\\SubwayRunners\\assets\\infiniterunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{643C2E5C-6C7C-5A2D-4063-F9EC9F0DA3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\infiniterunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{643C2E5C-6C7C-5A2D-4063-F9EC9F0DA3E8}|Assembly-CSharp.csproj|c:\\unimar\\jogos\\subwayrunners\\assets\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{643C2E5C-6C7C-5A2D-4063-F9EC9F0DA3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{643C2E5C-6C7C-5A2D-4063-F9EC9F0DA3E8}|Assembly-CSharp.csproj|c:\\unimar\\jogos\\subwayrunners\\assets\\buffmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{643C2E5C-6C7C-5A2D-4063-F9EC9F0DA3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\buffmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "BuffManager.cs",
+              "DocumentMoniker": "C:\\Unimar\\Jogos\\SubwayRunners\\Assets\\BuffManager.cs",
+              "RelativeDocumentMoniker": "Assets\\BuffManager.cs",
+              "ToolTip": "C:\\Unimar\\Jogos\\SubwayRunners\\Assets\\BuffManager.cs",
+              "RelativeToolTip": "Assets\\BuffManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAxwB0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T23:56:10.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Unimar\\Jogos\\SubwayRunners\\Assets\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\GameManager.cs",
+              "ToolTip": "C:\\Unimar\\Jogos\\SubwayRunners\\Assets\\GameManager.cs",
+              "RelativeToolTip": "Assets\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T22:28:19.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "InfiniteRunner.cs",
               "DocumentMoniker": "C:\\Unimar\\Jogos\\SubwayRunners\\Assets\\InfiniteRunner.cs",
               "RelativeDocumentMoniker": "Assets\\InfiniteRunner.cs",
               "ToolTip": "C:\\Unimar\\Jogos\\SubwayRunners\\Assets\\InfiniteRunner.cs",
               "RelativeToolTip": "Assets\\InfiniteRunner.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA1wCUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAgwIoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-10T01:00:19.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Unimar\\Jogos\\SubwayRunners\\Assets\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\PlayerController.cs",
               "ToolTip": "C:\\Unimar\\Jogos\\SubwayRunners\\Assets\\PlayerController.cs",
               "RelativeToolTip": "Assets\\PlayerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAA1wGAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T04:16:51.54Z",
               "EditorCaption": ""

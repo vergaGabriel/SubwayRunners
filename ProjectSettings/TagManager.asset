@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Obstacle
   - Coin
+  - Buff
+  - Ground
   layers:
   - Default
   - TransparentFX
